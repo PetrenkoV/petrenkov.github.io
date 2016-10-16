@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/components/sticky.min.js"></script>
+    <script src="js/core/scrollspy.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/chart.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <div class="uk-container uk-container-center">
+            <div class="top">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="login">
+                    <form action="">
+                        <input type="email" name="email" placeholder="Почта" required>
+                        <input type="password" name="psw" placeholder="Пароль" required>
+                        <button type="submit" value="Submit" class="log">Войти</button>
+                    </form>
+                </div>
+            </div>
+            <p class="uk-text-center caption">
+                Простое и мощное решение для управления вашим бизнесом
+            </p>
+            <div class="icons">
+                <div class="icons_item"><img src="images/icon_home.png" alt="">
+                    <p class="uk-text-center">
+                        Джетборд
+                    </p>
+                </div>
+                <div class="icons_item"><img src="images/icon_box.png" alt="">
+                    <p class="uk-text-center">
+                        Проекты и задачи
+                    </p>
+                </div>
+                <div class="icons_item"><img src="images/icon_crm.png" alt="">
+                    <p class="uk-text-center">
+                        CRM
+                    </p>
+                </div>
+                <div class="icons_item"><img src="images/icon_user.png" alt="">
+                    <p class="uk-text-center">
+                        Сотрудники
+                    </p>
+                </div>
+                <div class="icons_item"><img src="images/icon_statistic.png" alt="">
+                    <p class="uk-text-center">
+                        Статистика
+                    </p>
+                </div>
+                <div class="icons_item"><img src="images/icon_contact.png" alt="">
+                    <p class="uk-text-center">
+                        Контакты
+                    </p>
+                </div>
+                <div class="icons_item"><img src="images/icon_flash.png" alt="">
+                    <p class="uk-text-center">
+                        Отчеты
+                    </p>
+                </div>
+                <div class="icons_item"><img src="images/icon_shop.png" alt="">
+                    <p class="uk-text-center">
+                        Магазин приложений
+                    </p>
+                </div>
+            </div>
+            <button class="reg">Зарегистрироваться</button>
+            <p class="uk-text-center description">ИЛИ ПОСМОТРИТЕ, ЧТО ВНУТРИ ДЖЕТ БЮРО</p>
+        </div>
+    </div>
+    <div class="wrapper__arrow"><img src="images/arrow.png" alt="" class="arrow"></div>
+    <div class="main">
+        <div class="uk-container uk-container-center">
+            <div class="sidebar" data-uk-sticky="{top:50}">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item active">
+                            <a href="#profile" class="nav__item-link">
+                                <div class="icon__image"><img src="images/profile.png" alt="" class="avatar"></div>
+                                <span class="caption">Это ваш профиль
+                                <span class="description">Контактная информация, ваши коллеги, и ваша занятность</span></span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#jetboard" class="nav__item-link">
+                                <div class="icon__image"><img src="images/icon_home.png" alt="" class="icon"></div>
+                                <span>Джетборд<span class="show">Вся информация у вас перед глазами</span></span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#project" class="nav__item-link">
+                                <div class="icon__image"><img src="images/icon_box.png" alt="" class="icon"></div>
+                                <span>Проекты и задачи<span class="show">Удобное и наглядное ведение проектов</span></span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#crm" class="nav__item-link">
+                                <div class="icon__image"><img src="images/icon_crm.png" alt="" class="icon"></div>
+                                <span>CRM<span class="show">Коммуникация с клиенами, обработка заказов</span></span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#co-worker" class="nav__item-link">
+                                <div class="icon__image"><img src="images/icon_user.png" alt="" class="icon"></div>
+                                <span>Сотрудники<span class="show">Структура вашей компании, контакты сотрудников</span></span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__item-link">
+                                <div class="icon__image"><img src="images/icon_flash.png" alt="" class="icon"></div>
+                                <span>Контакты<span class="show">Универсальная база контактов — история изменений, заметки, напоминания</span></span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#shop" class="nav__item-link">
+                                <div class="icon__image"><img src="images/icon_shop.png" alt="" class="icon"></div>
+                                <span>Магазин приложений<span class="show">Неограниченные возможности: добавляйте любые элементы и блоки</span></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="wrapper__inner">
+                <section class="section" data-section="profile">
+                    <div class="profile" data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}">
+                        <div class="profile__top">
+                            <p class="profile__top-time">Был онлайн в 14:42</p>
+                            <p class="profile__top-name">Станислав Коржиковский</p>
+                        </div>
+                        <div class="profile__communication">
+                            <ul class="profile__communication__list">
+                                <a href="">
+                                    <li class="profile__communication__item"><img src="images/phone.png" alt="">
+                                        <p>Позвонить</p>
+                                    </li>
+                                </a>
+                                <a href="">
+                                    <li class="profile__communication__item"><img src="images/envelope.png" alt="">
+                                        <p>Написать</p>
+                                    </li>
+                                </a>
+                                <a href="">
+                                    <li class="profile__communication__item"><img src="images/task.png" alt="">
+                                        <p>Поставить задачу</p>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="profile__info" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                        <div class="profile__table">
+                            <table>
+                                <tr>
+                                    <td>Дата рождения</td>
+                                    <td>25 января 1985</td>
+                                </tr>
+                                <tr>
+                                    <td>Компания</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Должность</td>
+                                    <td>Копирайтер</td>
+                                </tr>
+                                <tr>
+                                    <td>Отдел</td>
+                                    <td class="group">Креативный отдел</td>
+                                </tr>
+                                <tr>
+                                    <td>Телефон</td>
+                                    <td class="phone">+7 921 344-55-66</td>
+                                </tr>
+                                <tr>
+                                    <td>Адрес почты</td>
+                                    <td class="mail">usermail@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Скайп</td>
+                                    <td class="skype">s.korzhzikovsky</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="profile__about">
+                            <p class="caption">О себе</p>
+                            <p class="description">I think they need to be more candid about what they want to be. Platforms without responsibility? Or media companies with the organisational framework in place to make big editorial decisions?</p>
+                            <p class="description">If they are media companies then by necessity they can accept the revenues that brings. But they also need to accept the responsibility created by the necessary regulation that entails.</p>
+                        </div>
+                    </div>
+                    <div class="profile__people" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true}">
+                        <table class="leaders">
+                            <tr>
+                                <th>Руководители:</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="ava"><img src="images/ava_1.png" alt=""></div>Василий Петров</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="ava"><img src="images/ava_1.png" alt=""></div>Витория Лодочкина</td>
+                            </tr>
+                        </table>
+                        <table class="subordinates">
+                            <tr>
+                                <th>Подчиненые:</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="ava"><img src="images/ava_1.png" alt=""></div>Петр Стаканов</td>
+                                <td>
+                                    <div class="ava"><img src="images/ava_1.png" alt=""></div>Петр Стаканов</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="ava"><img src="images/ava_1.png" alt=""></div>Лев Малиновский</td>
+                                <td>
+                                    <div class="ava"><img src="images/ava_1.png" alt=""></div>Лев Малиновский</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="ava"><img src="images/ava_1.png" alt=""></div>Дарья уточкина</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="profile__task" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true}">
+                        <div class="open_project">
+                            <ul>
+                                <li><span class="open_p">3</span>
+                                    <p>ОТКРЫТЫХ ПРОЕКТА</p>
+                                </li>
+                                <li><a href="">Создание сайта для доставки цветов</a></li>
+                                <li><a href="">Шьем классные сумочки</a></li>
+                                <li><a href="">Проект по запуску спутника</a></li>
+                            </ul>
+                        </div>
+                        <div class="open_task">
+                            <ul>
+                                <li><span class="open_t">5</span>
+                                    <p>ОТКРЫТЫХ ЗАДАЧ</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ended_task">
+                            <ul class="last_list">
+                                <li><span class="ok">42</span>
+                                    <p>ЗАДАЧИ ВЫПОЛНЕНО ЗА НЕДЕЛЮ</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="section" data-section="jetboard">
+                    <div class="first__col" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
+                        <div class="application">
+                            <p><span>1</span> ЗАЯВКА</p>
+                            <p class="name">Брачев Святополк Викторович</p>
+                        </div>
+                        <div class="letter">
+                            <p><span>1</span> ПИСЬМО</p>
+                            <p class="author">Re: (<span>nelya76@list.ru</span>)</p>
+                            <p class="subject">23-й день всеобщего флешмоба. Во-вторых и в третьих </p>
+                            <p class="subject">23-й день всеобщего флешмоба. Во-вторых и в третьих </p>
+                        </div>
+                    </div>
+                    <div class="second__col" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
+                        <div class="task">
+                            <p><span>4</span> ЗАДАЧИ</p>
+                            <p class="jet">
+                                JetBureau
+                            </p>
+                            <p class="subject">Создание таблицы для распостронения какой-то фигни</p>
+                            <p class="subject">Создание таблицы для распостронения какой-то фигни</p>
+                        </div>
+                        <div class="news">
+                            <p class="news_p">НОВОСТИ</p>
+                            <ul>
+                                <li>
+                                    <p>Сотрудники онлайн: <span>1</span></p>
+                                </li>
+                                <li>
+                                    <p>Последний сотрудник зарегистрирован <span>19</span> дней назад</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="chart_div" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}"></div>
+                </section>
+                <section class="section" data-section="project">
+                    <div class="order" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true}">
+                        <div class="project_image item_1"></div>
+                        <div class="project_info">
+                            <div class="project_name">
+                                <p class="caption">Проект по печати на футболках классных картинок</p>
+                                <ul>
+                                    <li><img src="images/ava_1.png" alt=""></li>
+                                    <li>
+                                        <p class="owner">Владелец</p>
+                                        <span>Антон Птичкин</span></li>
+                                </ul>
+                            </div>
+                            <ul>
+                                <li>Нарисовать иконку <span>(2)</span> </li>
+                                <li>Прочитать и откоментить бриф <span>(4)</span></li>
+                                <li>Сделать прототип</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true}">
+                        <div class="project_image item_2"></div>
+                        <div class="project_info">
+                            <div class="project_name">
+                                <p class="caption">Делаем кучу разных штук</p>
+                                <ul>
+                                    <li><img src="images/ava_1.png" alt=""></li>
+                                    <li>
+                                        <p class="owner">Владелец</p>
+                                        <span>Антон Птичкин</span></li>
+                                </ul>
+                            </div>
+                            <ul>
+                                <li>Нарисовать иконку <span>(2)</span> </li>
+                                <li>Прочитать и откоментить бриф <span>(4)</span></li>
+                                <li>Сделать прототип</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true}">
+                        <div class="project_image item_3"></div>
+                        <div class="project_info">
+                            <div class="project_name">
+                                <p class="caption">Обработка фотографий</p>
+                                <ul>
+                                    <li><img src="images/ava_1.png" alt=""></li>
+                                    <li>
+                                        <p class="owner">Владелец</p>
+                                        <span>Антон Птичкин</span></li>
+                                </ul>
+                            </div>
+                            <ul>
+                                <li>Нарисовать иконку <span>(2)</span> </li>
+                                <li>Прочитать и откоментить бриф <span>(4)</span></li>
+                                <li>Сделать прототип</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true}">
+                        <div class="project_image item_4"></div>
+                        <div class="project_info">
+                            <div class="project_name">
+                                <p class="caption">Издать книгу &#171;Фотопроекты и супер-интересные истории&#187;</p>
+                                <ul>
+                                    <li><img src="images/ava_1.png" alt=""></li>
+                                    <li>
+                                        <p class="owner">Владелец</p>
+                                        <span>Антон Птичкин</span></li>
+                                </ul>
+                            </div>
+                            <ul>
+                                <li>Нарисовать иконку <span>(2)</span> </li>
+                                <li>Прочитать и откоментить бриф <span>(4)</span></li>
+                                <li>Сделать прототип</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="section" data-section="crm">
+                    <div class="request">
+                        <div class="request__new">
+                            <div class="new" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true}">
+                                <p>НОВЫЕ ЗАЯВКИ<span>11</span></p><span class="plus">+</span>
+                            </div>
+                            <ul data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                <li>
+                                    <p class="name">Антонина Котикова</p>
+                                    <p class="mail">antonina.kitty@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p class="date">12:43</p>
+                                </li>
+                            </ul>
+                            <ul data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                <li>
+                                    <p class="name">Антонина Котикова</p>
+                                    <p class="mail">antonina.kitty@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p class="date">12:43</p>
+                                </li>
+                            </ul>
+                            <ul data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                <li>
+                                    <p class="name">Антонина Котикова</p>
+                                    <p class="mail">antonina.kitty@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p class="date">12:43</p>
+                                </li>
+                            </ul>
+                            <ul data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                <li>
+                                    <p class="name">Антонина Котикова</p>
+                                    <p class="mail">antonina.kitty@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p class="date">12:43</p>
+                                </li>
+                            </ul>
+                            <ul data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                <li>
+                                    <p class="name">Антонина Котикова</p>
+                                    <p class="mail">antonina.kitty@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p class="date">12:43</p>
+                                </li>
+                            </ul>
+                            <ul data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                <li>
+                                    <p class="name">Антонина Котикова</p>
+                                    <p class="mail">antonina.kitty@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p class="date">12:43</p>
+                                </li>
+                            </ul>
+                            <ul data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                <li>
+                                    <p class="name">Антонина Котикова</p>
+                                    <p class="mail">antonina.kitty@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p class="date">12:43</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="request__watch">
+                            <div class="watch" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true}">
+                                <p>В РАССМОТРЕНИИ</p><span class="plus">+</span>
+                            </div>
+                            <ul data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                <li>
+                                    <p class="name">Антонина Котикова</p>
+                                    <p class="mail">antonina.kitty@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p class="date">12:43</p>
+                                </li>
+                            </ul>
+                            <ul data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                <li>
+                                    <p class="name">Антонина Котикова</p>
+                                    <p class="mail">antonina.kitty@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p class="date">12:43</p>
+                                </li>
+                            </ul>
+                            <ul data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                <li>
+                                    <p class="name">Антонина Котикова</p>
+                                    <p class="mail">antonina.kitty@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p class="date">12:43</p>
+                                </li>
+                            </ul>
+                            <ul data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                <li>
+                                    <p class="name">Антонина Котикова</p>
+                                    <p class="mail">antonina.kitty@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p class="date">12:43</p>
+                                </li>
+                            </ul>
+                            <ul data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                <li>
+                                    <p class="name">Антонина Котикова</p>
+                                    <p class="mail">antonina.kitty@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p class="date">12:43</p>
+                                </li>
+                            </ul>
+                            <ul data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                                <li>
+                                    <p class="name">Антонина Котикова</p>
+                                    <p class="mail">antonina.kitty@gmail.com</p>
+                                </li>
+                                <li>
+                                    <p class="date">12:43</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="section" data-section="co-worker">
+                    <div class="co-worker" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
+                        <ul class="first">
+                            <li class="uk-text-center item_1"><img src="images/ava_co-worker.png" alt="">
+                                <p class="name">Игорь Лошадкин</p>
+                                <p class="post">Lorem ipsum dolor.</p>
+                            </li>
+                        </ul>
+                        <ul class="second">
+                            <li class="uk-text-center item_1"><img src="images/ava_co-worker.png" alt="">
+                                <p class="name">Игорь Лошадкин</p>
+                                <p class="post">Lorem ipsum dolor.</p>
+                            </li>
+                            <li class="uk-text-center item_2"><img src="images/ava_co-worker.png" alt="">
+                                <p class="name">Игорь Лошадкин</p>
+                                <p class="post">Lorem ipsum dolor.</p>
+                            </li>
+                            <li class="uk-text-center item_3"><img src="images/ava_co-worker.png" alt="">
+                                <p class="name">Игорь Лошадкин</p>
+                                <p class="post">Lorem ipsum dolor.</p>
+                            </li>
+                        </ul>
+                        <ul class="third">
+                            <li class="uk-text-center item_1"><img src="images/ava_co-worker.png" alt="">
+                                <p class="name">Игорь Лошадкин</p>
+                                <p class="post">Lorem ipsum dolor.</p>
+                            </li>
+                            <li class="uk-text-center item_2"><img src="images/ava_co-worker.png" alt="">
+                                <p class="name">Игорь Лошадкин</p>
+                                <p class="post">Lorem ipsum dolor.</p>
+                            </li>
+                            <li class="uk-text-center item_3"><img src="images/ava_co-worker.png" alt="">
+                                <p class="name">Игорь Лошадкин</p>
+                                <p class="post">Lorem ipsum dolor.</p>
+                            </li>
+                            <li class="uk-text-center item_4"><img src="images/ava_co-worker.png" alt="">
+                                <p class="name">Игорь Лошадкин</p>
+                                <p class="post">Lorem ipsum dolor.</p>
+                            </li>
+                        </ul>
+                        <ul class="fourth">
+                            <li class=" item_1"><img src="images/ava_co-worker.png" alt="">
+                                <p class="name">Игорь Лошадкин</p>
+                                <p class="post">Lorem ipsum dolor.</p>
+                            </li>
+                        </ul>
+                        <ul class="five">
+                            <li class=" item_1"><img src="images/ava_co-worker.png" alt="">
+                                <p class="name">Игорь Лошадкин</p>
+                                <p class="post">Lorem ipsum dolor.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section" data-section="contact" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+                    <table>
+                        <tr>
+                            <th>ИМЯ, ФАМИЛИЯ</th>
+                            <th>ТЕЛЕФОН</th>
+                            <th>АДРЕС ПОЧТЫ</th>
+                        </tr>
+                        <tr>
+                            <td class="warning">Василий Петров</td>
+                            <td>+7 921 334-55-66</td>
+                            <td>usermail@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Ульяна Ситечкина</td>
+                            <td>+7 921 334-55-66</td>
+                            <td>usermail@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Владислав Константинова</td>
+                            <td>+7 921 334-55-66</td>
+                            <td>usermail@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td class="warning">Виктория Лодочкина</td>
+                            <td>+7 921 334-55-66</td>
+                            <td>usermail@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Василий Петров</td>
+                            <td>+7 921 334-55-66</td>
+                            <td>usermail@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Ульяна Ситечкина</td>
+                            <td>+7 921 334-55-66</td>
+                            <td>usermail@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Владислава Константинова</td>
+                            <td>+7 921 334-55-66</td>
+                            <td>usermail@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Виктория Лодочкина</td>
+                            <td>+7 921 334-55-66</td>
+                            <td>usermail@gmail.com</td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="section" data-section="shop">
+                    <div class="add" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true}">
+                        <p class="wiki">Вики</p>
+                        <div class="populars">
+                            <ul class="popular">
+                                <li>ПОПУЛЯРНОСТЬ</li>
+                                <li>
+                                    <div class="star"><img src="images/star.png" alt=""><img src="images/star.png" alt=""><img src="images/star.png" alt=""><img src="images/star.png" alt=""></div>
+                                </li>
+                            </ul>
+                            <ul class='price'>
+                                <li>ДОБАВЛЕНИЕ</li>
+                                <li><span>БЕСПЛАТНО</span></li>
+                            </ul>
+                        </div>
+                        <div class="wrapper">
+                            <p class="text">Ведение проектов, назначение задач, обсуждения и возможность приложить файлы.
+                            </p>
+                            <ul>
+                                <li class="lits_item">Котики</li>
+                                <li class="lits_item">Еще пункт</li>
+                                <li class="lits_item">Лалала</li>
+                            </ul>
+                            <div class="develop">РАЗРАБОТЧИК: Евгений Лялечкин </div>
+                            <div class="dev_img"><img src="images/dev_1.png" alt=""><img src="images/dev_2.png" alt="" class="dev_img_img"></div>
+                            <button>Добавить</button>
+                        </div>
+                    </div>
+                    <div class="buy" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true}" ">
+                        <p class="statistic ">Статистика</p>
+                        <div class="populars ">
+                            <ul class="popular ">
+                                <li>ПОПУЛЯРНОСТЬ</li>
+                                <li>
+                                    <div class="star "><img src="images/star.png " alt=" "><img src="images/star.png " alt=" "><img src="images/star.png " alt=" "><img src="images/star.png " alt=" "></div>
+                                </li>
+                            </ul>
+                            <ul class='price'>
+                                <li>ДОБАВЛЕНИЕ</li>
+                                <li><span>300 Р</span> / за пользователя</li>
+                            </ul>
+                        </div>
+                        <div class="wrapper ">
+                            <p class="text ">Ведение проектов, назначение задач, обсуждения и возможность приложить файлы.
+                            </p>
+                            <ul>
+                                <li class="lits_item ">Котики</li>
+                                <li class="lits_item ">Еще пункт</li>
+                                <li class="lits_item ">Лалала</li>
+                            </ul>
+                            <div class="develop ">РАЗРАБОТЧИК: Евгений Лялечкин </div>
+                            <div class="dev_img "><img src="images/dev_1.png " alt=" "><img src="images/dev_2.png " alt=" " class="dev_img_img "></div>
+                            <button>Добавить</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
